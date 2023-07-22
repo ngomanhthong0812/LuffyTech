@@ -1,0 +1,2086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="shortcut icon" href="img/logo/Tím Hiện đại Logo Công nghệ & Trò chơi.jpg" type="image/x-icon">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>LuffyTech | Welcome to shop LuffyTech</title>
+</head>
+
+<body>
+  <div class="container-fuild">
+    <div class="my-header">
+      <div class="top-bar">
+        <div class="content">
+          <div><i class='bx bxs-phone'></i><a href="#">Bán hàng trực tuyến</a></div>
+          <div><i class='bx bxs-wallet'></i><a href="#">Hướng dẫn trả góp</a></div>
+          <div><i class='bx bxs-discount'></i><a href="#">Khuyễn mãi</a></div>
+        </div>
+        <div class="login-register">
+          <div><i class="fa-solid fa-circle-user"></i></div>
+          <div><a href="#">Đăng Kí</a></div>
+          <span style="color: #d3d3d3;">/</span>
+          <div><a href="#">Đăng Nhập</a></div>
+        </div>
+      </div>
+      <div class="logo-search-cart">
+        <div class="logo"><img src="img/logo/Tím Hiện đại Logo Công nghệ & Trò chơi.jpg" alt=""></div>
+        <div class="search"><input type="text" placeholder="Tìm kiếm">
+          <div class="icon"><i class='bx bx-search'></i></div>
+        </div>
+        <div class="cart">
+          <div class="sale" onclick="flash_sale()"><i class="fa-solid fa-bolt-lightning"></i>
+            <p>Flash sale</p>
+          </div>
+          <div class="sale" onclick="tin_tuc()"><i class="fa-solid fa-newspaper"></i>
+            <p>Tin Tức</p>
+          </div>
+          <div class="sale" onclick="gio_hang()"><i class="fa-solid fa-cart-shopping"></i>
+            <p>Giỏ hàng</p>
+            <div class="icon">0</div>
+          </div>
+          <div class="sale" onclick="lien_he()"><i class="fa-solid fa-headphones-simple"></i></i>
+            <p>Liên hệ</p>
+          </div>
+        </div>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Máy bộ LuffyTech </a></li>
+          <li><a href="#">Màn hình máy tính<i class='bx bx-chevron-down icon'></i></a>
+            <ul class="dropdown-menu">
+              <li class="submenu">
+                <ul>
+                  <li class="title">Hảng</li class="title">
+                  <li><a href="#">Màn hình Asus</a></li>
+                  <li><a href="#">Màn hình Dell</a></li>
+                  <li><a href="#">Màn hình HP</a></li>
+                  <li><a href="#">Màn hình Acer</a></li>
+                </ul>
+              </li>
+              <li class="submenu" style="height: 100px;">
+                <ul>
+                  <li class="title">Theo độ phân giải</li class="title">
+                  <li><a href="#">Màn hình HD</a></li>
+                  <li><a href="#">Màn hình Full HD</a></li>
+                  <li><a href="#">màn hình 4k</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Máy tính xách tay<i class='bx bx-chevron-down icon'></i></a>
+            <ul class="dropdown-menu">
+              <li class="submenu">
+                <ul>
+                  <li class="title">Hảng</li>
+                  <li><a href="#">Laptop Asus</a></li>
+                  <li><a href="#">Laptop Dell</a></li>
+                  <li><a href="#">Laptop HP</a></li>
+                  <li><a href="#">Laptop Acer</a></li>
+                </ul>
+              </li>
+              <li class="submenu">
+                <ul>
+                  <li class="title">Nhu cầu sử dụng</li>
+                  <li><a href="#">Mỏng Nhẹ</a></li>
+                  <li><a href="#">Học Tập - Văn Phòng</a></li>
+                  <li><a href="#">Giải Trí - Game</a></li>
+                  <li><a href="#">Kỹ Thuật - Đồ Hoạ</a></li>
+                </ul>
+              </li>
+            </ul>
+
+          </li>
+          <li><a href="#">Gaming gear</a></li>
+          <li><a href="#">Linh kiện máy tính</a></li>
+          <li><a href="#">Phụ kiện</a></li>
+          <li><a href="#">Thiết bị văn phòng</a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="my-body">
+      <div class="container-banner">
+        <div class="my-banner">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="7"
+                aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="8"
+                aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="9"
+                aria-label="Slide 10"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="img/banner/1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/banner/2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner/3.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner/4.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner/5.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner/6.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner/7.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner/8.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner/9.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/banner/10.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="trade-mark">
+          <img src="img/banner/pc.jpg" alt="">
+        </div>
+      </div>
+
+
+      <div class="contact">
+        <div class="content">
+          <div class="title"><span>Liên hệ với LuffyTech</span>
+            <div class="icon"></div>
+          </div><span class="content-title">Showroom 11 An Dương Vương - Huế, Hottline : 0366278235, email :
+            LuffyTech.@gmail.com</span>
+        </div>
+      </div>
+      <!-- 0 -->
+      <div class="product">
+        <div class="product-title">
+          <div class="title-1"><span style="font-size: 30px;">SẢN PHẨM KHUYẾN MÃI ĐẶC BIỆT</span
+              style="font-size: 30px;">
+            <div class="bar">
+              <div class="bar-1"></div>
+            </div>
+            <div class="title-1-1"><a href="#">Xem tất cả <i class='bx bxs-right-arrow'></i></a></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="banner-container">
+            <div class="container-card">
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/2.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/3.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/4.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/5.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/6.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/7.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/8.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/9.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/10.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/11.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/12.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/13.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/14.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/15.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/16.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham/17.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="prev-btn"><i class="bx bx-chevron-left"></i></button>
+            <button class="next-btn"><i class="bx bx-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!-- 1 -->
+      <div class="product">
+        <div class="product-title">
+          <div class="title-2" style="border: none;">
+            <span style="font-size: 25px; font-weight: bold;">Máy Bộ LuffyTech</span style="font-size: 30px;">
+            <div class="title-2-1"><a href="#">PC CPU INTEL</a> <a href="#">PC CPU AMD</a> <a href="#" class="all">Xem
+                tất cả <i class='bx bxs-right-arrow'></i></a></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="banner-container-1">
+            <div class="container-card">
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-1/2.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-1/3.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-1/4.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-1/5.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-1/6.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-1/7.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-1/8.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-1/9.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-1/10.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-1/11.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="prev-btn prev-btn-1"><i class="bx bx-chevron-left"></i></button>
+            <button class="next-btn next-btn-1"><i class="bx bx-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!-- 2 -->
+      <div class="product">
+        <div class="product-title">
+          <div class="title-2" style="border: none;">
+            <span style="font-size: 25px; font-weight: bold;">MÀN HÌNH MÁY TÍNH</span style="font-size: 30px;">
+            <div class="title-2-1"><a href="#">Thương hiệu</a> <a href="#">Theo độ phân giải</a> <a href="#"
+                class="all">Xem tất cả <i class='bx bxs-right-arrow'></i></a></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="banner-container-2">
+            <div class="container-card">
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-2/2.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-2/3.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-2/4.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-2/5.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-2/6.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-2/7.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-2/8.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-2/9.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-2/10.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-2/11.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="prev-btn prev-btn-2"><i class="bx bx-chevron-left"></i></button>
+            <button class="next-btn next-btn-2"><i class="bx bx-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!-- 3 -->
+      <div class="product">
+        <div class="product-title">
+          <div class="title-2" style="border: none;">
+            <span style="font-size: 25px; font-weight: bold;">MÁY TÍNH XÁCH TAY</span style="font-size: 30px;">
+            <div class="title-2-1"><a href="#">Hãng sản xuất</a> <a href="#">laptop chơi game</a> <a href="#"
+                class="all">Xem tất cả <i class='bx bxs-right-arrow'></i></a></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="banner-container-3">
+            <div class="container-card">
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-3/2.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-3/3.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-3/4.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-3/5.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-3/6.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-3/7.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-3/8.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-3/9.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-3/10.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-3/11.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="prev-btn prev-btn-3"><i class="bx bx-chevron-left"></i></button>
+            <button class="next-btn next-btn-3"><i class="bx bx-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!-- 4 -->
+      <div class="product">
+        <div class="product-title">
+          <div class="title-2" style="border: none;">
+            <span style="font-size: 25px; font-weight: bold;">LINH KIỆN MÁY TÍNH</span style="font-size: 30px;">
+            <div class="title-2-1">
+              <a href="#">Bộ cử lý CPU</a>
+              <a href="#">RAM-Bộ nhớ trong</a>
+              <a href="#">Bo mạch chủ-Main</a>
+              <a href="#">Ổ cứng HDD</a>
+              <a href="#">Ổ cứng SSD</a>
+              <a href="#">Vỏ CASE</a>
+              <a href="#">Tản nhiệt</a>
+              <a href="#">Bàn phím</a>
+              <a href="#">Chuột máy tính</a>
+              <a href="#" class="all">Xem tất cả <i class='bx bxs-right-arrow'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="banner-container-4">
+            <div class="container-card">
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-4/2.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-4/3.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-4/4.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-4/5.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-4/6.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-4/7.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-4/8.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-4/9.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-4/10.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-4/11.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="prev-btn prev-btn-4"><i class="bx bx-chevron-left"></i></button>
+            <button class="next-btn next-btn-4"><i class="bx bx-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!-- 5 -->
+      <div class="product">
+        <div class="product-title">
+          <div class="title-2" style="border: none;">
+            <span style="font-size: 25px; font-weight: bold;">GAMING GEAR & CONSOLE</span style="font-size: 30px;">
+            <div class="title-2-1"><a href="#">PC CPU INTEL</a> <a href="#">PC CPU AMD</a> <a href="#" class="all">Xem
+                tất cả <i class='bx bxs-right-arrow'></i></a></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="banner-container-5">
+            <div class="container-card">
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-5/2.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-5/3.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-5/4.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-5/5.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-5/6.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-5/7.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-5/8.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-5/9.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-5/10.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-5/11.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="prev-btn prev-btn-5"><i class="bx bx-chevron-left"></i></button>
+            <button class="next-btn next-btn-5"><i class="bx bx-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!-- 6 -->
+      <div class="product">
+        <div class="product-title">
+          <div class="title-2" style="border: none;">
+            <span style="font-size: 25px; font-weight: bold;">TẢN NHIỆT</span style="font-size: 30px;">
+            <div class="title-2-1"><a href="#">Tản nhiệt khí</a> <a href="#">Tản nhiệt nước AIO</a> <a href="#">Linh
+                kiện tản nhiệt nước</a> <a href="#" class="all">Xem tất cả <i class='bx bxs-right-arrow'></i></a></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="banner-container-6">
+            <div class="container-card">
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-6/2.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-6/3.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-6/4.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-6/5.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-6/6.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-6/7.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-6/8.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-6/9.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-6/10.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-6/11.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="prev-btn prev-btn-6"><i class="bx bx-chevron-left"></i></button>
+            <button class="next-btn next-btn-6"><i class="bx bx-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!-- 7 -->
+      <div class="product">
+        <div class="product-title">
+          <div class="title-2" style="border: none;">
+            <span style="font-size: 25px; font-weight: bold;">TB LƯU TRỮ ,NGHE NHÌN</span style="font-size: 30px;">
+            <div class="title-2-1"><a href="#">USB-Thẻ nhớ</a> <a href="#">ổ cứng gắn ngoài</a><a href="#">Loa</a><a
+                href="#">Webcam</a> <a href="#" class="all">Xem tất cả <i class='bx bxs-right-arrow'></i></a></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="banner-container-7">
+            <div class="container-card">
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-7/2.jpg " class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-7/3.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-7/4.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-7/5.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-7/6.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-7/7.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-7/8.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-7/9.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-7/10.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-7/11.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="prev-btn prev-btn-7"><i class="bx bx-chevron-left"></i></button>
+            <button class="next-btn next-btn-7"><i class="bx bx-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!-- 8 -->
+      <div class="product">
+        <div class="product-title">
+          <div class="title-2" style="border: none;">
+            <span style="font-size: 25px; font-weight: bold;">MÁY TÍNH BỘ - MÁY CHỦ</span style="font-size: 30px;">
+            <div class="title-2-1">
+              <a href="#">Máy tính bộ theo hãngL</a>
+              <a href="#">Máy tính theo nhu cầu</a>
+              <a href="#">Máy tính all-in-one</a>
+              <a href="#">Máy chủ-sever</a>
+              <a href="#">Máy trạm WORKSTATION</a>
+              <a href="#" class="all">Xem tất cả <i class='bx bxs-right-arrow'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="banner-container-8">
+            <div class="container-card">
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-8/2.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-8/3.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-8/4.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-8/5.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-8/6.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-8/7.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-8/8.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-8/9.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-8/10.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-8/11.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="prev-btn prev-btn-8"><i class="bx bx-chevron-left"></i></button>
+            <button class="next-btn next-btn-8"><i class="bx bx-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!-- 9 -->
+      <div class="product">
+        <div class="product-title">
+          <div class="title-2" style="border: none;">
+            <span style="font-size: 25px; font-weight: bold;">THIẾT BỊ MẠNG</span style="font-size: 30px;">
+            <div class="title-2-1"><a href="#">Thiết bị Router-Wifi</a> <a href="#">Thiết bị phát 3G/4G</a><a
+                href="#">Bộ thu kích Wifi</a> <a href="#" class="all">Xem tất cả <i class='bx bxs-right-arrow'></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="banner-container-9">
+            <div class="container-card">
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-9/2.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-9/3.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-9/4.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-9/5.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-9/6.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-9/7.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-9/8.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-9/9.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-9/10.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-9/11.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="prev-btn prev-btn-9"><i class="bx bx-chevron-left"></i></button>
+            <button class="next-btn next-btn-9"><i class="bx bx-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+      <!-- 10 -->
+      <div class="product">
+        <div class="product-title">
+          <div class="title-2" style="border: none;">
+            <span style="font-size: 25px; font-weight: bold;">THIẾT BỊ VĂN PHÒNG</span style="font-size: 30px;">
+            <div class="title-2-1"><a href="#">Máy in</a> <a href="#">Thiết bị lưu điện</a><a href="#">Thiết bị trình
+                chiếu</a><a href="#">Máy Scan</a> <a href="#" class="all">Xem tất cả <i
+                  class='bx bxs-right-arrow'></i></a></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="banner-container-10">
+            <div class="container-card">
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-10/2.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-10/3.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-10/4.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-10/5.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-10/6.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-10/7.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-10/8.png" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-10/9.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-10/10.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+              <div class="card p-2" style="width: 17.1rem; border-radius: 0;">
+                <div class="sale">khuyến mãi</div>
+                <img src="img/sanpham-10/11.jpg" class="card-img-top px-3 pt-3 pb-1" alt="...">
+                <div class="card-body p-1">
+                  <img src="img/logo pc/acer.png" alt="" style="width: 17%;" class="logo-shop">
+                  <div class="card-text py-1"
+                    style="font-size: 13.1px; overflow: hidden; font-weight: 600; white-space: nowrap;">Laptop Acer
+                    Aspire 5 A514-55-5954 (NX.K5 <br> BSV001) Xám (Cpu i5-1235U, Ram 8GB</div>
+                  <b class="text-danger">8.000.000</b>
+                  <div class="icon w-100 d-flex justify-content-end p-1"><i class='bx bx-cart-alt fs-4'></i></div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="btn-container">
+            <button class="prev-btn prev-btn-10"><i class="bx bx-chevron-left"></i></button>
+            <button class="next-btn next-btn-10"><i class="bx bx-chevron-right"></i></button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="news-container">
+        <div class="product" style="display: grid; grid-template-columns: 1fr;">
+          <div class="product-title">
+            <div class="title-2" style="border: none;">
+              <span style="font-size: 25px; font-weight: bold;"><i class="fa-solid fa-newspaper"
+                  style="color: #ff2d2d;"></i> TIN TỨC & MẸO VẶT</span style="font-size: 30px;">
+              <div class="title-2-1" style="border: 1px solid #ff2d2d; border-radius: 30px; padding: 0.4rem 0.8rem;"><a
+                  href="#" class="all">Xem tất cả </a></div>
+            </div>
+          </div>
+          <div class="news-card">
+            <div class="news-card-1">
+              <div class="image"><img src="img/news/1.jpg" alt=""></div>
+              <div class="title">
+                <div class="content">Top 5 mainboard chất lượng tốt, giá hợp lý đáng mua nhất năm 2023</div>
+                <div class="time">19-08-2022, 4:06 pm</div>
+              </div>
+            </div>
+            <div class="news-card-1">
+              <div class="image"><img src="img/news/2.jpeg" alt=""></div>
+              <div class="title">
+                <div class="content">Giải thích về Blade - nhân vật 5 sao mới của Honkai Star Rail 1.2</div>
+                <div class="time">Homo nay, 10:17 am</div>
+              </div>
+            </div>
+            <div class="news-card-1">
+              <div class="image"><img src="img/news/3.jpeg" alt=""></div>
+              <div class="title">
+                <div class="content">iPhone 15 vs iPhone 15 Pro: Những cải tiến đáng mong đợi</div>
+                <div class="time">20-06-2023, 3:06 pm</div>
+              </div>
+            </div>
+            <div class="news-card-1">
+              <div class="image"><img src="img/news/4.jpg" alt=""></div>
+              <div class="title">
+                <div class="content">Tips nhận 80 lượt pull miễn phí trong Honkai Star Rail 1.2</div>
+                <div class="time">20-07-2023, 2:34 pm</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <footer>
+      <div class="top-footer">
+        <div class="title"><i class='bx bxl-telegram'></i> Đăng ký nhận chương trình khuyến mãi!</div>
+        <div class="email"><input type="text" placeholder="Email của bạn"><i class='bx bx-envelope'></i></div>
+      </div>
+      <div class="body-footer">
+        <div class="contact">
+          <div class="logo-footer"><img src="img/logo/Tím Hiện đại Logo Công nghệ & Trò chơi.jpg" alt=""></div>
+          <div class="information">
+            <b>Công Ty TNHH LuffyTech</b>
+            <div><i class='bx bxs-map'></i>11-An Dương Vương - Huế</div>
+            <div><i class='bx bxs-phone'></i></i>0366278235</div>
+            <div><i class='bx bxs-envelope'></i>luffytech@gmail.com</div>
+          </div>
+          <div class="bank">
+            <b style="color: white;">Phương thức thánh toán:</b>
+            <div class="bank-1">
+              <div><a href=""><img src="img/bank/1650508432111-tut.png" alt=""></a></div>
+              <div><a href=""><img src="img/bank/1650623741740-logo 700x400 (53).png" alt=""></a></div>
+              <div><a href=""><img src="img/bank/huong-dan-dang-ky-tai-khoan-paypal-1024x512.jpg" alt=""></a></div>
+              <div><a href=""><img src="img/bank/zalopay-tiki.png" alt=""></a></div>
+            </div>
+          </div>
+
+        </div>
+        <div class="footer-menu">
+          <p>Thông tin chung</p>
+          <div><a href="">Giới thiệu về LuffyTech</a></div>
+          <div><a href="">Tin tuyển dụng</a></div>
+          <div><a href="">Tin tức</a></div>
+          <div><a href="">Tin khuyến mãi</a></div>
+          <div><a href="">Liên hệ, góp ý</a></div>
+          <div><a href="">Khách hàng doanh nghiệp</a></div>
+          <div><a href="">Tài khoản công ty</a></div>
+        </div>
+        <div class="footer-menu">
+          <p>Hỗ trợ khách hàng</p>
+          <div><a href="">Tìm hiểu về mua trả góp</a></div>
+          <div><a href="">Chính sách vận chuyển, giao hàng</a></div>
+          <div><a href="">Chính sách, quy định chung</a></div>
+          <div><a href="">Chính sách bảo hành</a></div>
+          <div><a href="">Chính sách đổi, trả lại hàng</a></div>
+          <div><a href="">Bảo mật thồn tin khách hàng</a></div>
+        </div>
+        <div class="footer-menu">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d846567.5095912406!2d105.67208683738296!3d9.715635599245456!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1690014960246!5m2!1svi!2s"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+      </div>
+      <div class="bottom-footer">
+        <div class="content">© 2019. CÔNG TY TNHH LuffyTech. Giấy phép kinh doanh: 00000111 - do sở KH & ĐT TP. Huế cấp
+          ngày: 25/01/2005.
+          All rights reserved.</div>
+      </div>
+    </footer>
+
+
+
+
+
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="style.js"></script>
+</body>
+
+</html>
